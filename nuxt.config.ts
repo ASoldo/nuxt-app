@@ -28,9 +28,4 @@ export default defineNuxtConfig({
     content: {
         // https://content.nuxtjs.org/api/configuration
     },
-    plugins: [
-    // {src: '~/plugins/pinia-persisted.client.ts', mode: 'client'},
-    // {src: '~/plugins/pinia-persisted2.universal.ts'}
-    ]
-    
 })
