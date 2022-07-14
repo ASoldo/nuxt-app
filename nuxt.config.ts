@@ -24,7 +24,7 @@ export default defineNuxtConfig({
             useWebmanifestExtension: false
         }
     },
-    buildModules: ['@pinia/nuxt',  '@nuxt/content'],
+    modules: ['@pinia/nuxt',  '@nuxt/content'],
     content: {
         // https://content.nuxtjs.org/api/configuration
     },

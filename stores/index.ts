@@ -1,12 +1,13 @@
+import { ref } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useFiltersStore = defineStore('my-store', () => {
+export const useFiltersStore = defineStore('my-store', {
 
-  const counter = ref<number>(10);
+  state: () =>({
+     counter: ref<number>(10)
+  }),
+  persist: true
 
-  return {
-    counter
-  }
 })
 // export const useFiltersStore = defineStore({
 //   id: 'andrija-store',
