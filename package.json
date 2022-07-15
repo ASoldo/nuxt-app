@@ -17,6 +17,6 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@pinia/nuxt": "^0.3.0",
     "pinia": "^2.0.16",
-    "pinia-plugin-persistedstate": "^1.6.1"
+    "pinia-plugin-persistedstate": "^1.6.3"
   }
 }
