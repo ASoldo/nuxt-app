@@ -35,13 +35,19 @@
       </template>
       <h1>theme</h1>
     </Noe>
+
+    <main role="main">
+      <StoryblokComponent v-if="story" :blok="story.content" />
+    </main>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { useFiltersStore } from "~/stores/index";
+import { useFiltersStore } from "~/store/index";
 
 import { User, Customer } from "~/types/User";
+
+const story = await useStoryblok('home', {version: 'draft'});
 
 let user = ref<User>({
   name: "Soldo",

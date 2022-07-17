@@ -16,15 +16,23 @@ export default defineNuxtConfig({
         "~/assets/css/tailwind.css"
     ],
     components: true,
-    pwa: {
-        icon: false, // disables the icon module
-        manifest: {
-            name: 'nuxt-project',
-            lang: 'en',
-            useWebmanifestExtension: false
-        }
+    // pwa: {
+    //     icon: false, // disables the icon module
+    //     manifest: {
+    //         name: 'nuxt-project',
+    //         lang: 'en',
+    //         useWebmanifestExtension: false
+    //     }
+    // },
+    publicRuntimeConfig:{
+        apiToken: process.env.STORYBLOK_API_KEY
     },
-    modules: ['@pinia/nuxt',  '@nuxt/content'],
+    modules: ['@pinia/nuxt', '@nuxt/content',
+        ["@storyblok/nuxt", { accessToken: process.env.STORYBLOK_API_KEY,
+        bridge: true,
+        useApiClient: true }]
+        // ...
+      ],
     content: {
         // https://content.nuxtjs.org/api/configuration
     },
