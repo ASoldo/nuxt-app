@@ -1,6 +1,6 @@
 <template>
   <div ref="pixiid" style="width: 100%; height: 100%">
-    {{bunny}}
+    {{ bunny }}
   </div>
 </template>
 
@@ -8,11 +8,14 @@
 const pixiid = ref(null);
 
 const props = defineProps({
-    bunny: {
-        type: String,
-        default: ()=>{{}}
-    }
-})
+  bunny: {
+    type: String,
+    default: () => {
+      {
+      }
+    },
+  },
+});
 
 onMounted(async () => {
   const PIXI = await import("pixi.js");
