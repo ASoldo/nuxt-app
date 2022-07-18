@@ -23,6 +23,7 @@
     "pinia-plugin-persistedstate": "^1.6.3",
     "pixi.js": "^6.4.2",
     "three": "^0.134.0",
-    "troisjs": "^0.3.4"
+    "troisjs": "^0.3.4",
+    "vue3-lottie": "^2.2.5"
   }
 }

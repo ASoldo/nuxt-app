@@ -6,7 +6,7 @@
             <DirectionalLight :position="{x: 0, y: 100, z: 0}" :intensity="0.5" />
             <!-- <PointLight :position="{ x: 50, y: 50, z: 50 }" />
             <PointLight :position="{ y: -50, z: -50 }" /> -->
-            <Box>
+            <Box :rotation="{x:0, y: 90, z:0}">
               <LambertMaterial />
             </Box>
           </Scene>

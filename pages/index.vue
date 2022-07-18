@@ -35,11 +35,10 @@
       </template>
       <h1>theme</h1>
     </Noe>
+    
     <PixiApp :bunny="'/img/Bunny.png'" />
-
-
-      <TroisApp />
-
+    <TroisApp />
+    <Lottie />
 
     <main role="main">
       <StoryblokComponent v-if="story" :blok="story.content" />

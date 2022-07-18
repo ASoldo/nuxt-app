@@ -13,7 +13,8 @@ export default defineNuxtConfig({
         },
     },
     css: [
-        "~/assets/css/tailwind.css"
+        "~/assets/css/tailwind.css",
+        "vue3-lottie/dist/style.css"
     ],
     components: true,
     // pwa: {
