@@ -5,8 +5,7 @@
     "dev": "nuxt dev",
     "dev:https": "nuxt dev --https",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
+    "preview": "nuxt preview"
   },
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
