@@ -14,4 +14,5 @@ defineProps({
     }
 })
 
+console.log(useSoldo());
 </script>

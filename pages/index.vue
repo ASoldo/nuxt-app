@@ -35,6 +35,7 @@
       </template>
       <h1>theme</h1>
     </Noe>
+    <PixiApp :bunny="'/img/Bunny.png'" />
 
     <main role="main">
       <StoryblokComponent v-if="story" :blok="story.content" />
@@ -42,7 +43,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { useFiltersStore } from "~/store/index";
 
 import { User, Customer } from "~/types/User";
