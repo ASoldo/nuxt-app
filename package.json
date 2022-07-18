@@ -21,6 +21,8 @@
     "@storyblok/nuxt": "^4.0.1",
     "pinia": "^2.0.16",
     "pinia-plugin-persistedstate": "^1.6.3",
-    "pixi.js": "^6.4.2"
+    "pixi.js": "^6.4.2",
+    "three": "^0.134.0",
+    "troisjs": "^0.3.4"
   }
 }

@@ -37,6 +37,10 @@
     </Noe>
     <PixiApp :bunny="'/img/Bunny.png'" />
 
+
+      <TroisApp />
+
+
     <main role="main">
       <StoryblokComponent v-if="story" :blok="story.content" />
     </main>
