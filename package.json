@@ -5,7 +5,10 @@
     "dev": "nuxt dev",
     "dev:https": "nuxt dev --https",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
@@ -23,6 +26,7 @@
     "pixi.js": "^6.4.2",
     "three": "^0.134.0",
     "troisjs": "^0.3.4",
+    "vitepress": "^1.0.0-alpha.4",
     "vue3-lottie": "^2.2.5"
   }
 }
