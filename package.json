@@ -28,6 +28,7 @@
     "@nuxt/test-utils-edge": "^3.0.0-rc.6-27635653.88f4525",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/color-mode": "^3.1.4",
     "@pinia/nuxt": "^0.3.0",
     "@storyblok/nuxt": "^4.0.1",
     "pinia": "^2.0.16",

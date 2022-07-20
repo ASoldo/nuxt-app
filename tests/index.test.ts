@@ -13,4 +13,8 @@ describe('suite name', () => {
   it('snapshot', () => {
     expect({ foo: 'bar' }).toMatchSnapshot()
   })
+
+  it('test tab9', () => {
+    expect("Soldo").toBe("Soldo");
+  })
 })

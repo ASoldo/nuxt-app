@@ -16,19 +16,23 @@ export default defineNuxtConfig({
         "~/assets/css/tailwind.css",
         "vue3-lottie/dist/style.css"
     ],
+    colorMode: {
+        classSuffix: ""
+    },
+    tailwindcss: {
+        cssPath: "~/assets/css/tailwind.css",
+        configPath: "~/tailwind.config.js",
+        exposeConfig: false,
+        config: {},
+        injectPosition: 0,
+        viewer: true
+    },
     components: true,
-    // pwa: {
-    //     icon: false, // disables the icon module
-    //     manifest: {
-    //         name: 'nuxt-project',
-    //         lang: 'en',
-    //         useWebmanifestExtension: false
-    //     }
-    // },
+
     publicRuntimeConfig:{
         apiToken: process.env.STORYBLOK_API_KEY
     },
-    modules: ['@pinia/nuxt', '@nuxt/content',
+    modules: ['@pinia/nuxt', '@nuxt/content', '@nuxtjs/color-mode',
         ["@storyblok/nuxt", { accessToken: process.env.STORYBLOK_API_KEY,
         bridge: true,
         useApiClient: true }]
