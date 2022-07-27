@@ -1,0 +1,12 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "dev",
+            "group": "soldo",
+            "database": "${workspaceFolder:nuxt-app}/server/database/dev.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

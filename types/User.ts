@@ -1,11 +1,11 @@
-interface User{
-    name: string,
-    age: number
-}
+// interface User{
+//     name: string,
+//     age: number
+// }
 
-interface Customer{
-    user: User,
-    created: boolean
-}
+// interface Customer{
+//     user: User,
+//     created: boolean
+// }
 
-export {User, Customer};
+// export {User, Customer};

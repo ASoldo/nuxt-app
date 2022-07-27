@@ -1,9 +1,10 @@
 <template>
   <div class="container mx-auto bg-gray-300 p-8">
     <h1 class="font-bold text-gray-600 text--lg">{{ soldo }}</h1>
+    <h1>hey</h1>
     <!-- <h1>{{filtersList[0]}}</h1> -->
     <!-- <h1>{{name}}</h1> -->
-    <h1>{{ triforce }}</h1>
+    <!-- <h1>{{ triforce }}</h1>
     <ContentDoc path="/" />
     <ContentDoc path="/users/user" v-slot="name">
       <h1 style="color: red">
@@ -38,30 +39,39 @@
     
     <PixiApp :bunny="'/img/Bunny.png'" />
     <TroisApp />
-    <Lottie />
+    <Lottie /> -->
+    <button @click="postRegisterForm">Click</button>
 
-    <main role="main">
+    <!-- <main role="main">
       <StoryblokComponent v-if="story" :blok="story.content" />
-    </main>
+    </main> -->
   </div>
 </template>
 
 <script setup lang="ts">
 import { useFiltersStore } from "~/store/index";
 
-import { User, Customer } from "~/types/User";
+let response = ref<FormValidation>({ hasErrors: false })
+const errors = ref(new Map())
+
+async function postRegisterForm() {
+  response.value = await registerWithEmail("Soldos", "andrijas", "soldo.andrija@gmail.coms", "0123456789");
+  errors.value = response.value.errors
+};
+
+// import { User, Customer } from "~/types/User";
 
 const story = await useStoryblok('home', {version: 'draft'});
 
-let user = ref<User>({
-  name: "Soldo",
-  age: 20,
-});
+// let user = ref<User>({
+//   name: "Soldo",
+//   age: 20,
+// });
 
-let customer = ref<Customer>({
-  user: user.value,
-  created: true,
-});
+// let customer = ref<Customer>({
+//   user: user.value,
+//   created: true,
+// });
 const soldo = "Soldo00" as string;
 const filtersStore = useFiltersStore();
 // const filtersList = filtersStore.filtersList;

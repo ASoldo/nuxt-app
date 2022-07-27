@@ -12,13 +12,17 @@
     "test": "vitest --reporter verbose --globals",
     "test:coverage": "vitest --coverage",
     "test:watch": "vitest --reporter verbose --globals",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "prisma:studio" : "npx prisma studio"
   },
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
+    "@types/bcrypt": "^5.0.0",
+    "@types/uuid": "^8.3.4",
     "@vitest/ui": "^0.18.1",
     "c8": "^7.11.3",
     "nuxt": "3.0.0-rc.6",
+    "prisma": "^4.1.0",
     "tailwindcss": "^3.1.6",
     "vitepress": "^1.0.0-alpha.4",
     "vitest": "^0.18.1"
@@ -30,12 +34,19 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/color-mode": "^3.1.4",
     "@pinia/nuxt": "^0.3.0",
+    "@prisma/client": "^4.1.0",
     "@storyblok/nuxt": "^4.0.1",
+    "@vueuse/core": "^8.9.4",
+    "bcrypt": "^5.0.1",
     "pinia": "^2.0.16",
     "pinia-plugin-persistedstate": "^1.6.3",
     "pixi.js": "^6.4.2",
     "three": "^0.134.0",
     "troisjs": "^0.3.4",
+    "uuid": "^8.3.2",
     "vue3-lottie": "^2.2.5"
+  },
+  "prisma": {
+    "schema": "server/database/schema.prisma"
   }
 }
