@@ -13,7 +13,8 @@
     "test:coverage": "vitest --coverage",
     "test:watch": "vitest --reporter verbose --globals",
     "test:ui": "vitest --ui",
-    "prisma:studio" : "npx prisma studio"
+    "prisma:studio": "npx prisma studio",
+    "prisma:migrate": "npx prisma migrate dev"
   },
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
