@@ -53,7 +53,6 @@
 
 <script setup lang="ts">
 import { useFiltersStore } from "~/store/index";
-import { useFps } from '@vueuse/core'
 
 let response = ref<FormValidation>({ hasErrors: false })
 const errors = ref(new Map())
