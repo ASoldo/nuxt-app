@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     publicRuntimeConfig:{
         apiToken: process.env.STORYBLOK_API_KEY
     },
-    modules: ['@pinia/nuxt', '@nuxt/content', '@nuxtjs/color-mode',
+    modules: ['@pinia/nuxt', '@nuxt/content', '@nuxtjs/color-mode', '@vueuse/nuxt',
         ["@storyblok/nuxt", { accessToken: process.env.STORYBLOK_API_KEY,
         bridge: true,
         useApiClient: true }]

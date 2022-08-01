@@ -45,11 +45,15 @@
     <!-- <main role="main">
       <StoryblokComponent v-if="story" :blok="story.content" />
     </main> -->
+    <div>
+      {{fps}}/fps
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useFiltersStore } from "~/store/index";
+import { useFps } from '@vueuse/core'
 
 let response = ref<FormValidation>({ hasErrors: false })
 const errors = ref(new Map())
@@ -89,4 +93,5 @@ const store = filtersStore.counter;
 const recieved = function (param) {
   console.log("recieved" + param.broj);
 };
+const fps = useFps();
 </script>
