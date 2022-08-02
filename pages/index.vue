@@ -1,6 +1,14 @@
 <template>
   <div class="container mx-auto bg-gray-300 p-8">
     <h1 class="font-bold text-gray-600 text--lg">{{ soldo }}</h1>
+    <div ref="el" :style="style" style="position: fixed; background-color: blue; color: white;">
+    <span>
+      Drag me you Drag Queen!
+    </span>
+   <div>
+    <h1>Soldo</h1>
+   </div> 
+    </div>
     <h1>hey</h1>
     <!-- <h1>{{filtersList[0]}}</h1> -->
     <!-- <h1>{{name}}</h1> -->
@@ -53,6 +61,7 @@
 
 <script setup lang="ts">
 import { useFiltersStore } from "~/store/index";
+import { useDraggable } from '@vueuse/core'
 
 let response = ref<FormValidation>({ hasErrors: false })
 const errors = ref(new Map())
@@ -93,4 +102,11 @@ const recieved = function (param) {
   console.log("recieved" + param.broj);
 };
 const fps = useFps();
+const el = ref<HTMLElement | null>(null);
+const { x,y, style} = useDraggable(el, {
+  initialValue: {
+    x: 0,
+    y: 0,
+  }
+});
 </script>
